@@ -35,6 +35,7 @@ export default function Index() {
               ? "You won!"
               : "You lost, idiot..."
           );
+          setGuess("");
         }}
       >
         <input
