@@ -30,7 +30,11 @@ export default function Index() {
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          alert(guess === correctAnswer ? "You won!" : "You lost, idiot...");
+          alert(
+            guess.toLowerCase() === correctAnswer
+              ? "You won!"
+              : "You lost, idiot..."
+          );
         }}
       >
         <input
